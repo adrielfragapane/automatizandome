@@ -1,0 +1,129 @@
+.suez {
+    font-family: 'Suez One', serif;
+}
+
+.animatedElement {
+    visibility: hidden;
+}
+
+@media (min-width: 0px) {       /*xs*/
+
+    .title h1 {
+        font-family: 'Suez One', serif;
+        /*animation: Slide_Up ease 2s;*/
+    }
+
+    #meca {
+        width: 100%;
+    }
+
+    .title {
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .servicioFooter {
+        font-size: 0.7rem;
+    }
+
+    .tareaTexto {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {     /*sm*/
+}
+
+@media (min-width: 768px) {     /*md*/
+    
+    #meca {
+        width: 50%;
+    }
+
+    .title {
+        padding: 3rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {     /*lg*/
+    
+    #meca {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1200px) {    /*xl*/
+
+}
+
+@keyframes Slide_Up {
+    0% {
+        transform: translateY(250px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-4%);
+	}
+	65%{
+		transform: translateY(0%);
+	}/*
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	*/
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}/*
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	*/
+}
