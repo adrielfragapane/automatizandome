@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
       var imagePos = $(this).offset().top;
   
       var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+600) {
+        if (imagePos < topOfWindow + $( window ).height()) {
           $(this).addClass("slideUp");
         }
       });
@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
       var imagePos = $(this).offset().top;
   
       var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+600) {
+        if (imagePos < topOfWindow+ $( window ).height()) {
           $(this).addClass("fadeIn");
         }
       });
