@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,31 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
+
+    $(window).scroll(function() {
+      $('.slidedUp').each(function(){
+      var imagePos = $(this).offset().top;
+  
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("slideUp");
+        }
+      });
+    });
+
+    $(window).scroll(function() {
+      $('.fadedIn').each(function(){
+      var imagePos = $(this).offset().top;
+  
+      var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass("fadeIn");
+        }
+      });
+    });
+
   }
 
 }

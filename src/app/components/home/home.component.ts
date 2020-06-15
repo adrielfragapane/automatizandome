@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import $ from 'jquery';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -72,8 +72,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-    
 
   }
 }
